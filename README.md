@@ -1,65 +1,92 @@
 # Water Quality Prediction - RMS
 
-This project aims to predict multiple water quality parameters using machine learning techniques, specifically `MultiOutputRegressor` wrapped around a `RandomForestRegressor`. It was developed as part of a one-month **AICTE Virtual Internship sponsored by Shell** in **June 2025**.
+## Project Description
+
+This project aims to predict multiple water quality parameters using machine learning techniques, specifically employing `MultiOutputRegressor` wrapped around a `RandomForestRegressor`. Developed as part of the **AICTE Virtual Internship** sponsored by Shell in **June 2025**.
 
 ---
 
-## Overview
+## 📝 Overview
 
-Access to clean water is a critical global concern. Accurate prediction of various water quality metrics can help in early detection of pollution and ensure timely intervention.
+**Clean water** is a critical global resource, and predicting various water quality metrics can help in early detection of pollution. This project focuses on the following steps:
 
-In this project, we:
+1. **Data Collection & Preprocessing**:
+    - Collected real-world water quality datasets.
+    - Cleaned, normalized, and prepared the data for machine learning.
 
-- Collected and preprocessed real-world water quality datasets
-- Used supervised machine learning for multi-target regression
-- Built a pipeline using `MultiOutputRegressor` with `RandomForestRegressor`
-- Evaluated the model using appropriate regression metrics
+2. **Modeling**:
+    - Used **supervised machine learning** techniques for multi-target regression.
+    - Built a prediction pipeline using **`MultiOutputRegressor`** wrapped around **`RandomForestRegressor`**.
 
----
-
-## Technologies Used
-
-- **Python 3.12**
-- **Pandas, NumPy** – Data handling
-- **Scikit-learn** – Machine learning model and evaluation
-- **Matplotlib, Seaborn** – Data visualization
-- **Jupyter Notebook** – Interactive experimentation
+3. **Evaluation**:
+    - Evaluated the model's performance using the **R² Score** and **Mean Squared Error (MSE)** metrics.
 
 ---
 
-## Predicted Water Quality Parameters
+## 💻 Technologies Used
 
-The model predicts multiple water quality parameters such as:
-
-- NH4
-- BOD5 (BSK5)
-- Colloids
-- O2, NO3, NO2, SO4, PO4 and 
-- CL
+- **Python 3.12** – Programming Language
+- **Pandas, NumPy** – Data Handling
+- **Scikit-learn** – Machine Learning & Model Evaluation
+- **Matplotlib, Seaborn** – Data Visualization
+- **Jupyter Notebook** – Interactive Development Environment
 
 ---
 
-## Model Performance
+## 🌊 Predicted Water Quality Parameters
 
-The model was evaluated using:
+The model predicts the following water quality parameters:
 
-- **R² Score**
-- **Mean Squared Error (MSE)**
-
-Performance was acceptable across all parameters
+- **NH₄**: Ammonium
+- **BOD₅**: Biochemical Oxygen Demand
+- **Colloids**: Colloidal Particles
+- **O₂**: Dissolved Oxygen
+- **NO₃**: Nitrate
+- **NO₂**: Nitrite
+- **SO₄**: Sulfate
+- **PO₄**: Phosphate
+- **Cl**: Chloride
 
 ---
 
-## Model link: 
+## 📊 Model Evaluation
 
-```https://drive.google.com/file/d/18RE5GQ9XdKZZCGr-Ii_UzUVDqIJBz3pL/view?usp=drive_link```
+### Performance Metrics:
+
+- **R² Score**: Measures the proportion of variance in the target variable that is predictable from the model.
+- **Mean Squared Error (MSE)**: Quantifies the difference between predicted and actual values. Lower values are preferred.
+
+The model showed **acceptable performance** across all the predicted parameters.
 
 ---
-## Internship Details
 
-- **Internship Type**: AICTE Virtual Internship - Edunet Foundation
-- **Sponsor**: Shell  
-- **Duration**: June 2025 (1 month)  
-- **Focus Area**: Machine Learning in Environmental Monitoring  
+## 🔗 Model Access
+
+Access the trained model through the link below:  
+[Download Model](https://drive.google.com/file/d/18RE5GQ9XdKZZCGr-Ii_UzUVDqIJBz3pL/view?usp=drive_link)
+
+---
+
+## 🏫 Internship Details
+
+- **Internship Type**: AICTE Virtual Internship
+- **Sponsor**: Shell
+- **Duration**: June 2025 (1 Month)
+- **Focus Area**: Machine Learning for Environmental Monitoring
+
+---
+
+## 🚀 Future Enhancements
+
+1. **Model Refinement**: Experiment with other models and hyperparameters to improve prediction accuracy.
+2. **Real-Time Monitoring**: Deploy the model for real-time predictions using live sensor data.
+3. **Expand Parameters**: Predict additional water quality parameters such as pH and heavy metals.
+
+---
+
+## 🙏 Acknowledgments
+
+- **AICTE** for providing the opportunity to work on meaningful environmental problems.
+- **Shell** for sponsoring the internship and supporting environmental monitoring initiatives.
 
 ---
